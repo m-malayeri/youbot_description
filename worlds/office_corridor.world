@@ -1,0 +1,154 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="office_world">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Office Room 1 -->
+    <model name="room1">
+      <static>true</static>
+      <link name="wall1">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5 0.1 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5 0.1 3</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <pose>0 -2.5 1.5</pose>
+      <link name="wall2">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 5 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 5 3</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <pose>-2.5 0 1.5</pose>
+    </model>
+
+    <!-- Office Room 2 -->
+    <model name="room2">
+      <static>true</static>
+      <link name="wall1">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5 0.1 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5 0.1 3</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <pose>10 -2.5 1.5</pose>
+      <link name="wall2">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 5 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 5 3</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <pose>7.5 0 1.5</pose>
+    </model>
+
+    <!-- Corridor -->
+    <model name="corridor">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>10 2 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>10 2 3</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <pose>5 2.5 1.5</pose>
+    </model>
+
+    <!-- Office Room 3 -->
+    <model name="room3">
+      <static>true</static>
+      <link name="wall1">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>5 0.1 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>5 0.1 3</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <pose>10 2.5 1.5</pose>
+      <link name="wall2">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 5 3</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 5 3</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <pose>7.5 5 1.5</pose>
+    </model>
+
+  </world>
+</sdf>
